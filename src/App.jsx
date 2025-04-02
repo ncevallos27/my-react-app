@@ -16,8 +16,6 @@ function Board({ xIsNext, squares, onPlay }) {
       nextSquares[i] = "O";
     }
     onPlay(nextSquares);
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
   }
   const winner = calculateWinner(squares);
   let status;
